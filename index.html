@@ -1,1 +1,74 @@
-index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conectar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      margin: 12px 0;
+      padding: 14px;
+      background: #0a7cff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    a.pix {
+      background: #00b894;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h2>Conectar</h2>
+
+  <a href="https://wa.me/55SEUNUMERO" target="_blank">
+    WhatsApp
+  </a>
+
+  <a href="mailto:seuemail@dominio.com">
+    E-mail
+  </a>
+
+  <a href="https://seusite.com" target="_blank">
+    Página
+  </a>
+
+  <a href="#" class="pix" onclick="copiarPix()">
+    Copiar chave Pix
+  </a>
+</div>
+
+<script>
+  function copiarPix() {
+    navigator.clipboard.writeText("SUA-CHAVE-PIX-AQUI");
+    alert("Chave Pix copiada!");
+  }
+</script>
+
+</body>
+</html>
