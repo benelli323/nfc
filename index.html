@@ -4,71 +4,102 @@
   <meta charset="UTF-8">
   <title>Conectar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background: linear-gradient(135deg, #ff7a18, #ffffff);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       margin: 0;
     }
+
     .card {
       background: #ffffff;
-      padding: 24px;
-      border-radius: 12px;
+      padding: 28px 24px;
+      border-radius: 14px;
       width: 100%;
       max-width: 360px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
-    h2 {
+
+    .logo {
+      width: 120px;
       margin-bottom: 20px;
     }
+
+    h2 {
+      color: #ff7a18;
+      margin-bottom: 20px;
+    }
+
     a {
       display: block;
       margin: 12px 0;
       padding: 14px;
-      background: #0a7cff;
-      color: #fff;
+      background: #ff7a18;
+      color: #ffffff;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
+      transition: background 0.2s;
     }
+
+    a:hover {
+      background: #e56a10;
+    }
+
     a.pix {
-      background: #00b894;
+      background: #ffffff;
+      color: #ff7a18;
+      border: 2px solid #ff7a18;
+    }
+
+    a.pix:hover {
+      background: #ff7a18;
+      color: #ffffff;
     }
   </style>
 </head>
+
 <body>
 
-<div class="card">
-  <h2>Conectar</h2>
+  <div class="card">
 
-  <a href="https://wa.me/5546991058908" target="_blank">
-    WhatsApp
-  </a>
+    <img src="logo-buyhelp.png" alt="BuyHelp" class="logo">
 
-  <a href="mailto:benelli@buyhelp.com.br">
-  E-mail
-</a>
+    <h2>Conectar</h2>
 
- <a href="https://www.buyhelp.com.br" target="_blank">
-  Página
-</a>
+    <a href="https://wa.me/5546991058908" target="_blank">
+      WhatsApp
+    </a>
 
-  <a href="#" class="pix" onclick="copiarPix()">
-    Copiar chave Pix
-  </a>
-</div>
+    <a href="mailto:benelli@buyhelp.com.br">
+      E-mail
+    </a>
 
-<script>
-  function copiarPix() {
-    navigator.clipboard.writeText("00020126580014br.gov.bcb.pix0136d837ba42-c65b-4cb7-a3f3-9e5352dcc7095204000053039865802BR5913Edson Benelli6010Mariopolis62290525SU2026010920563063533114763041E8A");
-    alert("Chave Pix copiada!");
-  }
-</script>
+    <a href="https://www.buyhelp.com.br" target="_blank">
+      Página
+    </a>
+
+    <a href="#" class="pix" onclick="copiarPix()">
+      Copiar chave Pix
+    </a>
+
+  </div>
+
+  <script>
+    function copiarPix() {
+      navigator.clipboard.writeText(
+        "00020126580014br.gov.bcb.pix0136d837ba42-c65b-4cb7-a3f3-9e5352dcc7095204000053039865802BR5913Edson Benelli6010Mariopolis62290525SU2026010920563063533114763041E8A"
+      );
+      alert("Chave Pix copiada!");
+    }
+  </script>
 
 </body>
 </html>
+
